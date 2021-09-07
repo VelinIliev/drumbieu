@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Velin Iliev">
+    <title>Velin Iliev - Front end developer</title>
+    <link rel="icon" href="./images/VI_small_logo.svg">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/navigation.css">
+    <link rel="stylesheet" href="./css/landingPage.css">
+    <link rel="stylesheet" href="./css/otherPages.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <script src="https://kit.fontawesome.com/ffc9b8fc23.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- NAVIGATION BIG -->
+    
+    <nav class="navigation-big">
+        <ul class="main-navigation">
+            <li class="icon-navigation"> <a href="#"><i class="fas fa-home"></i></a></li>
+            <li class="link-navigation"> <a href="#skills">Skills</a></li>
+            <li class="link-navigation"> <a href="#projects">Projects</a> </li>
+            <li class="link-navigation"> <a href="#experience">Experience</a> </li>
+            <li class="link-navigation"> <a href="#education">Education</a> </li>
+            
+            <li class="link-navigation"> <a download href="./images/resume/veliniliev_cv.pdf">Resume</a> </li>
+            <li class="link-navigation"> <a href="#contacts">Contacts</a> </li>
+            <li class="icon-navigation hide-when-small"> <a href="https://github.com/VelinIliev" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li class="icon-navigation hide-when-small"> <a href="https://www.linkedin.com/in/veliniliev" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+            <li class="icon-navigation hide-when-small"> <a href="mailto:veliniliev@gmail.com"><i class="fa fa-at"></i></a></li>
+        </ul>
+    </nav>
+
+    <!-- NAVIGATION SMALL -->
+
+    <nav class="navigation-small">
+        <div class="sandwichMenu">
+            <div class="line topline"></div>
+            <div class="line midline"></div>
+            <div class="line bottomline"></div>
+             <ul class='dropdown'>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a download href="./images/resume/Velin_Iliev-resume.pdf">Resume</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </div>
+        <div class="title"><a href="#">Velin Iliev</a></div>
+        <div class="contacts">
+            <a href="https://github.com/VelinIliev" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/veliniliev" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:veliniliev@gmail.com"><i class="fa fa-at"></i></a>
+        </div>
+    </nav>
+
+    <!-- LANDING PAGE -->
+    
+    <div class="start-page">
+        <h1 class="title-name">VELIN ILIEV</h1>
+        <h2 class="subtitle-position">CREATIVE FRONT END DEVELOPER</h2>
+        <p class="title-description">Creative front end developer offering 1+ years of experience in front end and 5+ experience in graphic design. Skilled in designing, developing and testing multiple web-based applications incorporating a range of technologies. Problem solving person. Collaborating closely with the team to support projects during all phases of delivery. Communicating technical issues in an understandable manner to the team and clients. Aspiring to combine broad background with strong technical skills to excel as front end developer.</p>
+        <canvas id="canvas1"></canvas>
+        <img class="mountain-image" src="./images/mountain-silhouette.svg" alt="mountain silhouette">
+    </div>
+
+    <!-- SKILLS PAGE -->
+
+    <div class="skills main-container" id="skills">
+        <h1 class="category-title">Skills</h1>
+        <div class="container" id="skillsContainer">
+            <div class="skills-column left">
+                <div class="el-skill">HTML <span>1+ years</span></div>
+                <div class="el-skill">CSS <span>1+ years</span></div>
+                <div class="el-skill">JAVASCRIPT <span>1+ years</span></div>
+                <div class="el-skill">GITHUB <span>1+ years</span></div>
+                <div class="el-skill">REACT <span>2+ months</span></div>
+            </div>
+            <div class="skills-column right">
+                <div class="el-skill">PHOTOSHOP <span>5+ years</span></div>
+                <div class="el-skill">ILLUSTRATOR<span>5+ years</span></div>
+                <div class="el-skill">INDESIGN<span>5+ years</span></div>
+                <div class="el-skill">PREMIERE PRO<span>2+ years</span></div>
+                <div class="el-skill">AFTER EFFECTS<span>2+ years</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PROJECTS PAGE -->
+
+    <div class="projects main-container" id="projects">
+        <h1 class="category-title">Projects</h1>
+        <div class="custom-select">FILTER BY:
+            <select id="option-slelctor">
+              <option value="all">All</option>
+              <option value="responsive">Responsive</option>
+              <option value="javascript">Javascript</option>
+            </select>
+        </div>
+        <div class="container" id="projectsContainer">
+            <!--  -->
+        </div>
+    </div>
+
+    <!-- EXPERIENCE PAGE -->
+
+    <div class="experience main-container" id="experience">
+        <h1 class="category-title">Experience</h1>
+        <div class="container" id="experienceContainer">
+            <div class="work-modul">
+                <h3>Front end</h3>
+                <p>1+ years</p>
+                <p>Building responsive web and mobile projects. Familiar with UI and UX.</p>
+            </div>
+            <div class="work-modul">
+                <h3>Graphic designer</h3>
+                <p>5+ years</p>
+                <p>Production of promotional catalogs, brochures, posters, billboards,
+                    calendars, signs, instore decoration, banners and more.</p>
+            </div>
+            <div class="work-modul">
+                <h3>IT Specialsit</h3>
+                <p>2+ years</p>
+                <p>Maintenance of computer equipment and software.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- EDUCATION PAGE -->
+
+    <div class="education main-container" id="education">
+        <h1 class="category-title">Education</h1>
+        <div class="container" id="educationContainer">
+            <div class="education-modul">
+                <h3>Linkedin Learning</h3>
+                <p>Completed courses: <br> 
+                    Become a React Developer, <br> 
+                    CSS Scrolling and Parallax, <br> 
+                    Functional Programming with JS ES6, 
+                    <br> Learning HTML Canvas 
+                    <br> and more. 
+                </p>
+            </div>
+            <div class="education-modul">
+                <h3>Progress</h3>
+                <p>Front end</p>
+                <p>Completed courses of front end<br> (Basic & Advanced)</p>
+            </div>
+            <div class="education-modul">
+                <h3>Linkedin Learning</h3>
+                <p>Completed courses of video editing with After Effects & PremierePro</p>
+            </div>
+            <div class="education-modul">
+                <h3>IBSEDU</h3>
+                <p>Bachelor of Accounting and Control</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACTS PAGE -->
+
+    <div class="contacts main-container" id="contacts">
+        <h1 class="category-title">Contacts</h1>
+        <div class="container" id="contactsContainer">
+            <ul class="contacts-page">
+                <li class="link-navigation bottom"> 
+                    <a href="mailto:veliniliev@gmail.com">
+                        <i class="fa fa-at"></i>veliniliev@gmail.com
+                    </a> 
+                </li>
+                <li class="link-navigation bottom"> 
+                    <a href="https://www.linkedin.com/in/veliniliev" target="_blank">
+                        <i class="fab fa-linkedin-in"></i>/veliniliev
+                    </a> 
+                </li>
+                <li class="link-navigation bottom"> 
+                    <a href="https://github.com/VelinIliev" target="_blank">
+                        <i class="fab fa-github"></i>/VelinIliev
+                    </a> 
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <footer>
+        Copyright © 2020-2021 drumbi.eu / Design and coding by Velin Iliev.
+    </footer>
+
+    <script src="./javascript/canvas.js"></script>
+    <script src="./javascript/animationSkills.js"></script>
+    <script src="./javascript/projects.js"></script>
+    <script src="./javascript/sandwichMenu.js"></script>
+</body>
+</html>

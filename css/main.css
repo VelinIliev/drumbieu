@@ -1,0 +1,34 @@
+:root {
+    --minWidth: 280px;
+    --html: #6ABECD;
+    --css: #3E54A3;
+    --js: #E13784;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    scroll-behavior: smooth;
+    min-width: var(--minWidth);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+body {
+    background: radial-gradient(ellipse at bottom, 
+                    #08455f 10%, #022331 40%, #000c11 70%);
+
+}
+
+/* FOOTER */
+
+footer {
+    box-sizing: border-box;
+    padding: 1em;
+    width: 100%;
+    min-width: var(--minWidth);
+    background-color: #000c11;
+    font-size: .8em;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 1.2;
+}

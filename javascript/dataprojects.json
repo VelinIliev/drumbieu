@@ -1,0 +1,160 @@
+[
+    {
+        "id": 1,
+        "image": "./images/thumbs/01_project-divan.jpg",
+        "name": "DIVAN - First Project",
+        "html": true,
+        "CSS": true,
+        "responsive": false,
+        "javascript": true,
+        "description": "This is the first project, build during the Front-end course Basic.",
+        "sitelink": "./01-BasicCourse/projectBasic/",
+        "codelink": "https://github.com/VelinIliev/divan"
+    },
+    {
+        "id": 2,
+        "image": "./images/thumbs/02_GuessTheNumber.jpg",
+        "name": "Guess the number",
+        "html": true,
+        "CSS": true,
+        "responsive": false,
+        "javascript": true,
+        "description": "Simple game, build during the Front-end course Advanced",
+        "sitelink": "./02-AdvancedCourse/01_GuessTheNumber/",
+        "codelink": "https://github.com/VelinIliev/01-GuessTheNumber"
+    },
+    {
+        "id": 3,
+        "image": "./images/thumbs/03_hangman.jpg",
+        "name": "Hangman",
+        "html": true,
+        "CSS": true,
+        "responsive": false,
+        "javascript": true,
+        "description": "Simple game, build during the Front-end course Advanced. My own idea for usage of RegEx. The game is only on bulgarian.",
+        "sitelink": "./02-AdvancedCourse/02_Hangman/",
+        "codelink": "https://github.com/VelinIliev/03_Hangman"
+    },
+    {
+        "id": 4,
+        "image": "./images/thumbs/04_TodoApp.jpg",
+        "name": "TODO App",
+        "html": true,
+        "CSS": true,
+        "responsive": false,
+        "javascript": true,
+        "description": "Simple API app, build during the Front-end course Advanced. <span class='red'> Will not work, because is using localhost.</span> You may veiw the code.",
+        "sitelink": "./02-AdvancedCourse/03_TODOApp-new/",
+        "codelink": "https://github.com/VelinIliev/04_TodoApp-new"
+    },
+    
+    {
+        "id": 5,
+        "image": "./images/thumbs/07_faq-accordion-card.jpg",
+        "name": "FAQ accordion card",
+        "html": true,
+        "CSS": true,
+        "responsive": true,
+        "javascript": true,
+        "description": "Challenge by Frontend Mentor.<br> Difficulty: NEWBIE",
+        "sitelink": "./03-FrontendMentor/03-faq-accordion-card-main/",
+        "codelink": "https://github.com/VelinIliev/03-faq-accordion-card-main"
+    },
+    
+    {
+        "id": 6,
+        "image": "./images/thumbs/09_four-card-feature-section.jpg",
+        "name": "Four card section",
+        "html": true,
+        "CSS": true,
+        "responsive": true,
+        "javascript": false,
+        "description": "Challenge by Frontend Mentor.<br> Difficulty: NEWBIE",
+        "sitelink": "./03-FrontendMentor/05-four-card-feature-section-master/",
+        "codelink": "https://github.com/VelinIliev/frontendmentor/tree/master/05-four-card-feature-section-master"
+    },
+    {
+        "id": 7,
+        "image": "./images/thumbs/10-social-media-dashboard.jpg",
+        "name": "Media dashboard ",
+        "html": true,
+        "CSS": true,
+        "responsive": true,
+        "javascript": true,
+        "description": "Challenge by Frontend Mentor.<br> Difficulty: JUNIOR",
+        "sitelink": "./03-FrontendMentor/06-social-media-dashboard-with-theme-switcher-master/",
+        "codelink": "https://github.com/VelinIliev/frontendmentor/tree/master/06-social-media-dashboard-with-theme-switcher-master"
+    },
+    {
+        "id": 8,
+        "image": "./images/thumbs/11-interactive-pricing-component.jpg",
+        "name": "Interactive pricing",
+        "html": true,
+        "CSS": true,
+        "responsive": true,
+        "javascript": true,
+        "description": "Challenge by Frontend Mentor.<br> Difficulty: JUNIOR",
+        "sitelink": "./03-FrontendMentor/07-interactive-pricing-component-main/",
+        "codelink": "https://github.com/VelinIliev/frontendmentor/tree/master/07-interactive-pricing-component-main"
+    },
+    {
+        "id": 9,
+        "image": "./images/thumbs/12-job-listings-with-filtering.jpg",
+        "name": "Job listings",
+        "html": true,
+        "CSS": true,
+        "responsive": true,
+        "javascript": true,
+        "description": "Challenge by Frontend Mentor.<br> Difficulty: <strong>INTERMEDIATE</strong>",
+        "sitelink": "./03-FrontendMentor/08-static-job-listings-master/",
+        "codelink": "https://github.com/VelinIliev/frontendmentor/tree/master/08-static-job-listings-master"
+    },
+    {
+        "id": 10,
+        "image": "./images/thumbs/13-countdown-timer.jpg",
+        "name": "Countdown timer",
+        "html": true,
+        "CSS": true,
+        "responsive": false,
+        "javascript": true,
+        "description": "Challenge by Frontend Mentor.<br> Difficulty: <strong>INTERMEDIATE</strong>",
+        "sitelink": "./03-FrontendMentor/09-launch-countdown-timer-main/",
+        "codelink": "https://github.com/VelinIliev/frontendmentor/tree/master/09-launch-countdown-timer-main"
+    },
+    {
+        "id": 11,
+        "image": "./images/thumbs/14-calculator.jpg",
+        "name": "Calculator",
+        "html": true,
+        "CSS": true,
+        "responsive": false,
+        "javascript": true,
+        "description": "Challenge by Frontend Mentor.<br> Difficulty: <strong>INTERMEDIATE</strong>",
+        "sitelink": "./03-FrontendMentor/10-Calculator/",
+        "codelink": "https://github.com/VelinIliev/frontendmentor/tree/master/10-Calculator"
+    },
+    {
+        "id": 12,
+        "image": "./images/thumbs/15-rock-paper-scissors-game.jpg",
+        "name": "Rock, Paper, Scissors",
+        "html": true,
+        "CSS": true,
+        "responsive": false,
+        "javascript": true,
+        "description": "Challenge by Frontend Mentor.<br> Difficulty: <strong>ADVANCED</strong>",
+        "sitelink": "./03-FrontendMentor/11-rock-paper-scissors-master/",
+        "codelink": "https://github.com/VelinIliev/frontendmentor/tree/master/11-rock-paper-scissors-master"
+    },
+    {
+        "id": 13,
+        "image": "./images/thumbs/16-my-site-v3.jpg",
+        "name": "My current site",
+        "html": true,
+        "CSS": true,
+        "responsive": true,
+        "javascript": true,
+        "description": "Challenge by Frontend Mentor.<br> Difficulty: <strong>ADVANCED</strong>",
+        "sitelink": "http://drumbi.eu",
+        "codelink": "https://github.com/"
+    }
+]

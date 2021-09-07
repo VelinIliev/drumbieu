@@ -1,0 +1,74 @@
+.start-page {
+    position: relative;
+    width: 100vw;
+    min-width: var(--minWidth);
+    height: 100vh;
+    background: radial-gradient(ellipse at bottom, 
+                    #08455f 10%, #022331 40%, #000c11 70%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: -1;
+}
+#canvas1 { 
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -100;
+}
+.title-name { 
+    font-size: 3em;
+    color: #FFFFFF;
+    z-index: 100;
+    animation:  scale-in 3s ease-in-out forwards,
+                pulse 2s 6s infinite;
+}
+.subtitle-position { 
+    margin: 1em;
+    font-size: 1.3em;
+    text-align: center;
+    color: #FFFFFF;
+    animation:  scale-in 3s 2s ease-in-out backwards,
+                pulse 2s 6s infinite;
+}
+
+.title-description { 
+    box-sizing: border-box;
+    padding: 1.5rem;
+    margin: 1em;
+    max-width: 600px;
+    min-width: var(--minWidth);
+    text-align: center;
+    line-height: 1.2;
+    color: #FFFFFF66;
+    animation:  scale-in 3s 4s ease-in-out backwards;
+}
+@keyframes pulse {
+    0%, 100% { 
+        opacity: 1;
+        transform: scale(1);
+    } 50% {
+        opacity: .8;
+        transform: scale(1.05);
+    }
+}
+@keyframes scale-in {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    } 80% {
+        transform: scale(1.2);
+    } 100% {
+        transform: scale(1), rotateX(1);
+        opacity: 1;
+    }
+} 
+
+.mountain-image {
+    position: absolute;
+    width: 150em;
+    bottom: -1.3em;
+    left: 0;
+}
