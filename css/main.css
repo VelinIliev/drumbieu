@@ -14,6 +14,7 @@ html, body {
     font-size: 16px;
 }
 html {
+    background-color: #022331;
     background: radial-gradient(ellipse at bottom, 
                     #08455f 10%, #022331 40%, #000c11 70%);
 
