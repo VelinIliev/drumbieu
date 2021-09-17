@@ -4,21 +4,21 @@ let stars = [];
 let fallingStars = [];
 let count = 0;
 
-let randomRange = ( (min, max) => Math.floor( Math.random() * (max - min + 1) ) + min);
+let randomRange = ( (min, max) => (( Math.random() * (max - min ) ) + min));
 
 let randomColor = () =>  
-            `rgba(  ${randomRange(250, 255)},
-                    ${randomRange(250, 255)},
-                    ${randomRange(250, 255)},
-                    ${randomRange(.5, .7)})`;
+            `rgba(  ${randomRange(250, 255).toFixed(0)},
+                    ${randomRange(250, 255).toFixed(0)},
+                    ${randomRange(250, 255).toFixed(0)},
+                    ${randomRange(.4, .6).toFixed(1)})`;
 
 let fillingStarsArr = ( (x,y) => {
     let element = {
         x_position: x,
         y_position: y,
-        radius: randomRange(.5,1),
-        x_move: randomRange(-.1,.1),
-        y_move: randomRange(-.1,.1),
+        radius: randomRange(.5,1.5).toFixed(1),
+        x_move: randomRange(-1,1).toFixed(1),
+        y_move: randomRange(-1,1).toFixed(1),
     };
     stars = [...stars, element]
 
@@ -28,12 +28,12 @@ let fillingStarsArr = ( (x,y) => {
 });
 let creatingFallingStar = () => {
     let y_move_random_direction = [1,-1];
-        let leftOrRight = y_move_random_direction[randomRange(0,1)];
+        let leftOrRight = y_move_random_direction[randomRange(0,1).toFixed(0)];
         let element1 = {
             x_position: randomRange(canvas.width/2-canvas.width/4, canvas.width/2+canvas.width/4),
             y_position: 0,
-            radius: randomRange(1.5,2),
-            x_move: 2*leftOrRight,
+            radius: randomRange(2,4).toFixed(1),
+            x_move: (randomRange(0,4).toFixed(0))*leftOrRight,
             y_move: 20,
         };
         fallingStars = [...fallingStars, element1];
@@ -58,7 +58,7 @@ let creatingFallingStar = () => {
 const clearScreen = () => ctx.clearRect(0, 0, canvas.width, canvas.height);
 
 function draw() {
-    let [x, y] = [randomRange(0, canvas.width), randomRange(0, canvas.height)];
+    let [x, y] = [randomRange(0, canvas.width).toFixed(0), randomRange(0, canvas.height).toFixed(0)];
 
     fillingStarsArr(x, y); 
     
@@ -71,8 +71,8 @@ function draw() {
         ctx.arc(el.x_position, el.y_position, el.radius, 0, Math.PI * 2, true);
         ctx.fill();
         
-        el.x_position = el.x_position + el.x_move;
-        el.y_position = el.y_position + el.y_move;
+        el.x_position = el.x_position*1 + el.x_move*1;
+        el.y_position = el.y_position*1 + el.y_move*1;
     });
     count++;
     
@@ -89,9 +89,8 @@ function draw() {
         ctx.arc(el.x_position, el.y_position, el.radius, 0, Math.PI * 2, true);
         ctx.fill();
         
-        el.x_position = el.x_position + el.x_move;
-        el.y_position = el.y_position + el.y_move;
-        // console.log(el.x_position, el.y_position);
+        el.x_position = el.x_position*1 + el.x_move*1;
+        el.y_position = el.y_position*1 + el.y_move*1;
         if (el.x_position > canvas.width 
                 || el.x_position < 0 
                 || el.y_position > canvas.height 
