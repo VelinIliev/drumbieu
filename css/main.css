@@ -13,7 +13,7 @@ html, body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
 }
-body {
+html {
     background: radial-gradient(ellipse at bottom, 
                     #08455f 10%, #022331 40%, #000c11 70%);
 
