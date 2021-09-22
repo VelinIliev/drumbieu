@@ -1,6 +1,6 @@
 # My current site
 
-build for representation of my skills till now.  
+Build for representation of my skills till now.  
 Used VanillaJS, canvas, virtualDOM manipulation, transitions, animation on scroll, functional programming, arrow syntax, ternary operators, fetch and more.
 
 ## Links
