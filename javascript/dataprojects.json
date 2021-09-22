@@ -43,7 +43,7 @@
         "CSS": true,
         "responsive": false,
         "javascript": true,
-        "description": "Simple API app, build during the Front-end course Advanced. <span class='red'> Will not work, because is using localhost.</span> You may veiw the code.",
+        "description": "Simple REST app, build during the Front-end course Advanced. Build with localStorage and localHost. Working version with localStorage.",
         "sitelink": "./02-AdvancedCourse/03_TODOApp-new/",
         "codelink": "https://github.com/VelinIliev/04_TodoApp-new"
     },
