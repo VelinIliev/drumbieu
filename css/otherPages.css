@@ -3,7 +3,7 @@
 .main-container {
     box-sizing: border-box;
     padding: 4rem 2rem;
-    width: 100wv;
+    width: 100vw;
     min-width: var(--minWidth);
     min-height: 50vh;
 }
