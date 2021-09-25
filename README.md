@@ -15,7 +15,7 @@ There are two branches, one is with pure css and other with SASS
 ## Built with
 
 - HTML5
-- CSS / FLEX
+- CSS / FLEX / SASS
 - JAVASCRIPT ES6+
 
 ## Screenshot
