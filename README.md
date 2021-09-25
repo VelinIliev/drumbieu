@@ -3,6 +3,11 @@
 Build for representation of my skills till now.  
 Used VanillaJS, canvas, virtualDOM manipulation, transitions, animation on scroll, functional programming, arrow syntax, ternary operators, fetch and more.
 
+## Branches 
+There are two branches, one is with pure css and other with SASS
+- master: pure CSS
+- drumbieu-SASS: SASS
+
 ## Links
 
 - Live Site URL: [http://drumbi.eu/](http://drumbi.eu/)  
@@ -10,7 +15,7 @@ Used VanillaJS, canvas, virtualDOM manipulation, transitions, animation on scrol
 ## Built with
 
 - HTML5
-- CSS / FLEX
+- CSS / FLEX / SASS
 - JAVASCRIPT ES6+
 
 ## Screenshot
