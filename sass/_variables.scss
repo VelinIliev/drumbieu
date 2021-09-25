@@ -1,0 +1,17 @@
+$minWidth: 280px;
+$html-color: #6ABECD;
+$css-color: #3E54A3;
+$js-color: #E13784;
+
+$main-text-color: #FFFFFF;
+$description-text-color: #FFFFFF99;
+
+$gradient-first-stop: #08455f;
+$gradient-second-stop: #022331;
+$gradient-third-stop: #000c11;
+
+$default-gradient: 
+    radial-gradient(ellipse at bottom, 
+    $gradient-first-stop 10%, 
+    $gradient-second-stop 40%, 
+    $gradient-third-stop 70%);

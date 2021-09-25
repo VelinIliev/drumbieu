@@ -1,0 +1,181 @@
+/* ALL PAGES */
+
+.main-container {
+    box-sizing: border-box;
+    padding: 4rem 2rem;
+    width: 100vw;
+    min-width: $minWidth;
+    min-height: 50vh;
+    
+    .category-title {
+        font-size: 3rem;
+        text-align: center;
+        color: $main-text-color;
+        border-bottom: 1px solid $main-text-color;
+    }
+    .container {
+        box-sizing: border-box;
+        padding: 1rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        color: $main-text-color;
+    }
+}
+
+/* SKILLS PAGE */
+
+.skills-column {
+    position: relative;
+    padding: 1rem;
+    width: 13em;
+    opacity: 0;
+    &.left {
+        left: -100px
+    }
+    &.right {
+        left: 100px
+    }
+    &.appear-skills {
+        animation: revealSkills .5s forwards cubic-bezier(.64,.7,.97,1.38);
+    }
+    @keyframes revealSkills {
+        0% { 
+            opacity: 0; 
+        }
+        100% { 
+            left: 0;
+            opacity: 1; 
+        }
+    }
+    .el-skill {
+        margin: 1rem 0;
+        font-size: 1em;
+        border-bottom: 1px solid #FFFFFF55;
+        &>span {
+            float: right;
+        }
+    }
+} 
+
+
+/* PROJECTS PAGE */
+
+#projects {
+    .custom-select {
+        margin-top: 1em;
+        color: $main-text-color;
+        text-align: center;
+    }
+}
+
+#projectsContainer {
+    .project {
+        width: 15em;
+        min-width: 15rem;
+        height: 25em;
+        overflow: hidden;
+        border-radius: .5em;
+        margin: 1em;
+        border: 1px solid #FFFFFF;
+        animation: showProjects .5s;
+        &.image>img {
+            width: 100%;
+        }
+        .name, .tools, .description, .links {
+            box-sizing: border-box;
+            padding: .5rem .5rem;
+        }
+        .name, .tools {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .mame, .description {
+            color: $main-text-color;
+        }
+        .HTML{
+            color: $html-color;
+        }
+        .CSS {
+            color: $css-color;
+        }
+        .javascript {
+            color: $js-color;
+        }
+        .description {
+            height: 7.5rem;
+            line-height: 120%;
+        }
+        .links>a {
+            box-sizing: border-box;
+            display: inline-block;
+            background-color: $gradient-first-stop;
+            width: 6.5rem;
+            font-size: .65rem;
+            text-align: center;
+            color: $main-text-color;
+            padding: .5rem;
+            margin-left: .2rem;
+            border-radius: .3rem;
+            &:hover {
+                font-weight: bold;
+            }
+        }
+    }
+    @keyframes showProjects {
+        0% {
+            transform: scale(.5);
+        } 100%
+        {
+            transform: scale(1);
+        }
+        
+    }
+}
+
+
+/* EDUCATION & EXPERIENCE*/
+
+#educationContainer, #experienceContainer {
+    flex-direction: column;
+    align-items: center;
+    .modul{
+        max-width: 20em;
+        min-width: 12.5rem;
+        margin-top: 1em;
+        text-align: center;
+        line-height: 120%;
+    }
+    h3 {
+        font-size: 1.2em;
+        margin-bottom: .4rem;
+        text-decoration: underline;
+    }
+}
+
+
+/* CONTACTS */
+
+#contactsContainer {
+    &>ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        list-style-type: none;
+        &>li {
+            margin-top: 1em;
+        }
+        &>li>a{
+            color: $main-text-color;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        &>li>a>.fa, .fab {
+            margin-right: .5em;
+        }
+    }
+    
+}

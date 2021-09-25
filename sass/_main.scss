@@ -1,0 +1,28 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    scroll-behavior: smooth;
+    min-width: $minWidth;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+html {
+    background-color: $gradient-third-stop;
+    background: $default-gradient;
+
+}
+
+/* FOOTER */
+
+footer {
+    box-sizing: border-box;
+    padding: 1em;
+    width: 100%;
+    min-width: $minWidth;
+    background-color: #000c11;
+    font-size: .8em;
+    color: $main-text-color;
+    text-align: center;
+    line-height: 1.2;
+}

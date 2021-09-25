@@ -1,0 +1,48 @@
+
+.navigation-small { 
+    display: none;
+}
+.navigation-big {
+    position: fixed;
+    box-sizing: border-box;
+    padding: 1em;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: $minWidth;
+    background-color: $gradient-third-stop;
+    font-size: .8em;
+    z-index: 200;
+    animation: reveal .5s 2s backwards ease-in;
+
+    @keyframes reveal {
+        0% { top: -2em; }
+        100% { top: 0; }
+    }
+
+    .main-navigation {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        li {
+            margin: 0 1em;
+            cursor: pointer;
+
+            a {
+                color: $main-text-color;
+                text-decoration: none;
+            }
+            
+        }
+        .link-navigation:hover {
+            border-bottom: 1px solid #FFFFFF;
+        }
+        .icon-navigation:hover { 
+            transform: scale(1.4);
+        }
+    }
+}
+
