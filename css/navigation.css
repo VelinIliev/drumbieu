@@ -37,6 +37,9 @@ a {
     text-decoration: none;
     color: #FFFFFF;
 }
+.hide-when-small { 
+    margin-right: -.5em;
+}
 .link-navigation:hover {
     border-bottom: 1px solid #FFFFFF;
 }
