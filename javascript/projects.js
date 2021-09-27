@@ -5,7 +5,7 @@ let ptojectsData = [];
 function renderProjects(data) {
     const projectsContainer = document.querySelector("#projectsContainer");
     projectsContainer.innerHTML = "";
-    let html, css, responsive, javascript = "";
+    let html, css, responsive, javascript, sass = "";
     data.forEach(el => {
         projectsContainer.innerHTML += `
         <div class="project">
@@ -17,8 +17,11 @@ function renderProjects(data) {
                 <div class="tools"> 
                     ${html = el.html === true ? 
                         '<span class="HTML">HTML</span>' : ''}
-                    ${css = el.CSS === true ? 
-                        '<span class="CSS">CSS</span>' : ''}
+                    ${css = el.CSS === true 
+                        ? el.sass === true 
+                            ? '<span class="CSS">SASS</span>' 
+                            : '<span class="CSS">CSS</span>'
+                        : ''}
                     ${responsive = el.responsive === true ? 
                         '<span class="CSS">(FLEX)</span>' : ''}
                     ${javascript = el.javascript === true ? 
@@ -58,6 +61,11 @@ optionSelector.addEventListener('change', function(){
     else if (optionSelector.value === 'responsive') {
         const newData = ptojectsData.filter(
                         (data) => data.responsive === true);
+        renderProjects(newData);
+    }
+    else if (optionSelector.value === 'sass') {
+        const newData = ptojectsData.filter(
+                        (data) => data.sass === true);
         renderProjects(newData);
     }
 })
