@@ -50,7 +50,7 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 
 optionSelector.addEventListener('change', function(){
-    [key] = [optionSelector.value];
+    let [key] = [optionSelector.value];
     if (optionSelector.value === 'all' ) {
         renderProjects(ptojectsData);
     }
