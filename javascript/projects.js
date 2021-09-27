@@ -51,12 +51,8 @@ window.addEventListener('DOMContentLoaded', function() {
 
 optionSelector.addEventListener('change', function(){
     let [key] = [optionSelector.value];
-    if (optionSelector.value === 'all' ) {
-        renderProjects(ptojectsData);
-    }
-    else  {
-        const newData = ptojectsData.filter(
-                        (data) => data[key]  === true);
-        renderProjects(newData);
-    }
+    let newData = (key === 'all') 
+        ? ptojectsData 
+        : ptojectsData.filter((data) => data[key]  === true);
+    renderProjects(newData)
 })
