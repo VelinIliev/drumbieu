@@ -50,22 +50,14 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 
 optionSelector.addEventListener('change', function(){
+    [key] = optionSelector.value;
     if (optionSelector.value === 'all' ) {
         renderProjects(ptojectsData);
     }
-    else if (optionSelector.value === 'javascript') {
+    else  {
         const newData = ptojectsData.filter(
-                        (data) => data.javascript === true);
-        renderProjects(newData);
-    }
-    else if (optionSelector.value === 'responsive') {
-        const newData = ptojectsData.filter(
-                        (data) => data.responsive === true);
-        renderProjects(newData);
-    }
-    else if (optionSelector.value === 'sass') {
-        const newData = ptojectsData.filter(
-                        (data) => data.sass === true);
+                        (data) => data[key]  === true);
+                        console.log(newData);
         renderProjects(newData);
     }
 })
