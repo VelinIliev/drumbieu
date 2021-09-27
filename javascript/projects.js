@@ -50,14 +50,13 @@ window.addEventListener('DOMContentLoaded', function() {
 });
 
 optionSelector.addEventListener('change', function(){
-    [key] = optionSelector.value;
+    [key] = [optionSelector.value];
     if (optionSelector.value === 'all' ) {
         renderProjects(ptojectsData);
     }
     else  {
         const newData = ptojectsData.filter(
                         (data) => data[key]  === true);
-                        console.log(newData);
         renderProjects(newData);
     }
 })
