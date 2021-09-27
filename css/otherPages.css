@@ -61,7 +61,13 @@
     }
 }
 /* PROJECTS PAGE */
-
+.alert {
+    margin: 6em;
+    font-size: 2em;
+    color: var(--js);
+    text-align: center;
+    line-height: 1.3em;
+}
 .custom-select {
     margin-top: 1em;
     color: #FFFFFF;

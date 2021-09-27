@@ -5,7 +5,7 @@ let ptojectsData = [];
 function renderProjects(data) {
     const projectsContainer = document.querySelector("#projectsContainer");
     projectsContainer.innerHTML = "";
-    let html, css, responsive, javascript, sass = "";
+    let html, css, responsive, javascript = "";
     data.forEach(el => {
         projectsContainer.innerHTML += `
         <div class="project">
@@ -34,10 +34,13 @@ function renderProjects(data) {
                     <a href="${el.codelink}" target="_blank">VIEW CODE</a>
             </div>
         </div>`;
-        
     }); 
-    
 };
+function renderError() {
+    const projectsContainer = document.querySelector("#projectsContainer");
+    projectsContainer.innerHTML = `<div class=alert>SOMETHING WENT WRONG! <br>
+    NO DATA LOADED</div>`;
+}
 
 window.addEventListener('DOMContentLoaded', function() {
     fetch(`${apiURL}`)
@@ -46,13 +49,16 @@ window.addEventListener('DOMContentLoaded', function() {
         ptojectsData = data;
         renderProjects(ptojectsData);
     })
-    .catch(err => console.log(err));
+    .catch(err => {
+        console.log(err);
+        renderError();
+    });
 });
 
 optionSelector.addEventListener('change', function(){
     let [key] = [optionSelector.value];
     let newData = (key === 'all') 
         ? ptojectsData 
-        : ptojectsData.filter((data) => data[key]  === true);
-    renderProjects(newData)
+        : ptojectsData.filter((data) => data[key] === true);
+    renderProjects(newData);
 })
