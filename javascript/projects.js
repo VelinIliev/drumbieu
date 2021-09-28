@@ -38,8 +38,9 @@ function renderProjects(data) {
 };
 function renderError() {
     const projectsContainer = document.querySelector("#projectsContainer");
-    projectsContainer.innerHTML = `<div class=alert>SOMETHING WENT WRONG! <br>
-    NO DATA LOADED</div>`;
+    projectsContainer.innerHTML = 
+        `<div class=alert>SOMETHING WENT WRONG! <br>
+        NO DATA LOADED</div>`;
 }
 
 window.addEventListener('DOMContentLoaded', function() {
