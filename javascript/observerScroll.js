@@ -1,9 +1,8 @@
 window.addEventListener("load", function () {
-    const skillsColumns = document.querySelectorAll('.skills-column')
+    const skillsColumns = document.querySelectorAll('.skills-column');
 
     const observer = new IntersectionObserver(function (entries) {
-        // console.log(entries);
-        entries.forEach( (entrie) => {
+        entries.forEach((entrie) => {
             if (entrie.intersectionRatio > 0 &&  
                 entrie.intersectionRatio <= 1) {
                     entrie.target.classList.add('appear-skills');
@@ -13,5 +12,5 @@ window.addEventListener("load", function () {
             }
         })
     });
-    skillsColumns.forEach( (el) => observer.observe(el))
+    skillsColumns.forEach((el) => observer.observe(el))
 })

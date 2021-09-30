@@ -87,11 +87,10 @@
 @keyframes showProjects {
     0% {
         transform: scale(.5);
-    } 100%
-    {
+    } 
+    100% {
         transform: scale(1);
     }
-    
 }
 .project>.image>img {
     width: 100%;
