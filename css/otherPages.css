@@ -11,7 +11,7 @@
     font-size: 3rem;
     text-align: center;
     color: #FFFFFF;
-    border-bottom: 1px solid white;
+    text-decoration: underline;
     transform-origin: top;
     transform: scaleY(0);
     opacity: 0;
