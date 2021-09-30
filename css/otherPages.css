@@ -12,9 +12,14 @@
     text-align: center;
     color: #FFFFFF;
     border-bottom: 1px solid white;
+    transform-origin: top;
+    transform: scaleY(0);
+    opacity: 0;
 }
 .appear-title {
-    animation: showProjects .5s linear;
+    transform: scale(1);
+    opacity: 1;
+    transition: transform 1s, opacity .5s;
 }
 
 .container {
