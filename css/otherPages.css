@@ -10,9 +10,11 @@
 .category-title {
     font-size: 3rem;
     text-align: center;
-    /* min-width: calc(var(--minWidth) - 6rem); */
     color: #FFFFFF;
     border-bottom: 1px solid white;
+}
+.appear-title {
+    animation: showProjects .5s linear;
 }
 
 .container {
