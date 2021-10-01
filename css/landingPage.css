@@ -77,28 +77,34 @@
     width: 5rem;
     left: 0;
     bottom:0;
-    text-shadow: 10px 10px 10px red;
-    animation: risingMoon 8s both linear;
-    filter:  drop-shadow(0px 0px 1.4rem  var(--mainTextColor));
+    animation: risingMoon 20s both linear;
 }
 
 @keyframes risingMoon {
     0% {
         left: 0;
         bottom:0;
+        transform: scale(1.3);
     }
-    20% {
-        left: 5%;
-        bottom: 20%;
+    14% {
+        left: 2%;
+        bottom: 14%;
+        transform: scale(1.2);
     }
-    40% {
-        left: 10%;
-        bottom: 40%;
+    28% {
+        left: 4%;
+        bottom: 28%;
+        transform: scale(1.1)
     }
-    60% {
-        left: 15%;
-        bottom: 60%;
-        transform: scale(1) rotateZ(0deg);;
+    42% {
+        left: 6%;
+        bottom: 42%;
+        transform: scale(1) rotateZ(0deg);
+    }
+    56% {
+        left: 8%;
+        bottom: 56%;
+        transform: scale(1) rotateZ(0deg);
     }
     100% {
         left: 30%;
