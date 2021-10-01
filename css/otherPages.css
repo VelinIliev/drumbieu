@@ -16,7 +16,7 @@
     transform: scaleY(0);
     opacity: 0;
 }
-.appear-title {
+.appear {
     transform: scale(1);
     opacity: 1;
     transition: transform 1s, opacity .5s;
@@ -29,7 +29,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    color: white;
+    color: #FFFFFF;
 }
 
 /* SKILLS PAGE */
@@ -55,7 +55,7 @@
 .el-skill > span {
     float: right;
 }
-.appear-skills {
+#skillsContainer .appear {
     animation: revealSkills .5s forwards cubic-bezier(.64,.7,.97,1.38);
 }
 @keyframes revealSkills {

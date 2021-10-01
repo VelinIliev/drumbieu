@@ -1,32 +1,19 @@
-window.addEventListener("load", function () {
+function observedForAnimation() {
     const skillsColumns = document.querySelectorAll('.skills-column');
-    const categoryTitles = this.document.querySelectorAll('.category-title');
+    const mainTitles = document.querySelectorAll('.category-title');
+    let obsrvedObjects = [...skillsColumns,  ...mainTitles];
 
-    const observerSkills = new IntersectionObserver( (entries) => {
+    const observerAnimation = new IntersectionObserver( (entries) => {
         entries.forEach((entrie) => {
-            // console.log(entrie);
             if (entrie.intersectionRatio > 0) {
-                    entrie.target.classList.add('appear-skills');
+                    entrie.target.classList.add('appear');
             } 
             else {
-                entrie.target.classList.remove('appear-skills');
+                entrie.target.classList.remove('appear');
             }
         })
     });
-    skillsColumns.forEach((item) => observerSkills.observe(item));
+    obsrvedObjects.forEach((item) => observerAnimation.observe(item));
+}
 
-
-    const observerTitles = new IntersectionObserver( (entries) => {
-        entries.forEach((entrie) => {
-            // console.log(entrie);
-            if (entrie.intersectionRatio > 0) {
-                    entrie.target.classList.add('appear-title');
-            } 
-            else {
-                entrie.target.classList.remove('appear-title');
-            }
-        })
-    });
-    categoryTitles.forEach((item) => observerTitles.observe(item));
-
-})
+window.addEventListener("load", observedForAnimation);
