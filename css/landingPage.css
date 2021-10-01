@@ -3,8 +3,7 @@
     width: 100vw;
     min-width: var(--minWidth);
     height: 100vh;
-    background: radial-gradient(ellipse at bottom, 
-                    #08455f 10%, #022331 40%, #000c11 70%);
+    background: var(--mainGrdadient);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,7 +19,7 @@
 }
 .title-name { 
     font-size: 3em;
-    color: #FFFFFF;
+    color: var(--mainTextColor);
     z-index: 100;
     animation:  scale-in 3s ease-in-out forwards,
                 pulse 2s 6s infinite;
@@ -29,7 +28,7 @@
     margin: 1em;
     font-size: 1.3em;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--mainTextColor);
     animation:  scale-in 3s 2s ease-in-out backwards,
                 pulse 2s 6s infinite;
 }
@@ -42,7 +41,7 @@
     min-width: var(--minWidth);
     text-align: center;
     line-height: 1.2;
-    color: #FFFFFF66;
+    color: var(--descrText);
     animation:  scale-in 3s 4s ease-in-out backwards;
 }
 @keyframes pulse {
@@ -65,10 +64,9 @@
         opacity: 1;
     }
 } 
-
 .mountain-image {
     position: absolute;
-    width: 150em;
+    width: 120vw;
     bottom: -1.3em;
     left: 0;
 }

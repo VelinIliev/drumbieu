@@ -19,7 +19,7 @@
         top: 0;
         left: 0;
         min-width: 280px;
-        background-color: #000c11;
+        background-color: var(--graientThirdStop);
         display: flex;
         align-items: center;
         width: 100%;
@@ -30,15 +30,13 @@
         height: 2rem;
         margin-top: .2rem;
         position: relative;
-        /* left: -4rem; */
         font-size: 1.2rem;
         text-align: left;
-        /* border: 1px solid red; */
     }
     .title>a {
         box-sizing: border-box;
         display: block;
-        color: #FFFFFF;
+        color: var(--mainTextColor);
         padding: .5rem 0rem;
         margin-top: -.25rem;
     }
@@ -63,7 +61,7 @@
         margin: .2rem 0;
         width: 2rem;
         height: .3rem;
-        background-color:#FFFFFF;
+        background-color: var(--mainTextColor);
         border-radius: .2rem;
         transition: transform .2s;
     }
@@ -78,13 +76,13 @@
         font-size: 1.3rem;
         line-height: 150%;
         text-align: left;
-        background-color: #08455f;
+        background-color: var(--gradientFirstStop);
         opacity: 0.8;
         overflow: hidden;
         animation: revealDropdown .3s ease-out forwards;
     }
     .active>li {
-        border-bottom: 1px dashed #FFFFFF;
+        border-bottom: 1px dashed var(--mainTextColor);
         margin-top: 1rem;
     }
     @keyframes revealDropdown {

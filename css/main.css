@@ -3,6 +3,15 @@
     --html: #6ABECD;
     --css: #3E54A3;
     --js: #E13784;
+    --mainTextColor: #FFFFFF;
+    --descrText: #FFFFFF66;
+    --gradientFirstStop:     #08455f;
+    --gradientSecondStop:    #022331;
+    --graientThirdStop:      #000c11;
+    --mainGrdadient:    radial-gradient(ellipse at bottom, 
+                        var(--gradientFirstStop) 10%, 
+                        var(--gradientSecondStop) 40%, 
+                        var(--graientThirdStop) 70%);
 }
 html, body {
     margin: 0;
@@ -14,9 +23,8 @@ html, body {
     font-size: 16px;
 }
 html {
-    background-color: #022331;
-    background: radial-gradient(ellipse at bottom, 
-                    #08455f 10%, #022331 40%, #000c11 70%);
+    background-color: var(--gradientSecondStop);
+    background: var(--mainGrdadient)
 
 }
 
@@ -27,9 +35,9 @@ footer {
     padding: 1em;
     width: 100%;
     min-width: var(--minWidth);
-    background-color: #000c11;
+    background-color: var(--graientThirdStop);
     font-size: .8em;
-    color: #FFFFFF;
+    color: var(--mainTextColor);
     text-align: center;
-    line-height: 1.2;
+    line-height: 1.7;
 }
