@@ -12,7 +12,7 @@
     text-align: center;
     color: var(--mainTextColor);
     text-decoration: underline;
-    transform-origin: top;
+    transform-origin: bottom;
     transform: scaleY(0);
     opacity: 0;
 }

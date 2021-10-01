@@ -27,6 +27,7 @@
 .subtitle-position { 
     margin: 1em;
     font-size: 1.3em;
+    line-height: 1.5;
     text-align: center;
     color: var(--mainTextColor);
     animation:  scale-in 3s 2s ease-in-out backwards,
@@ -69,4 +70,40 @@
     width: 120vw;
     bottom: -1.3em;
     left: 0;
+}
+
+.moon-image {
+    position: absolute;
+    width: 5rem;
+    left: 0;
+    bottom:0;
+    text-shadow: 10px 10px 10px red;
+    animation: risingMoon 8s both linear;
+    filter:  drop-shadow(0px 0px 1.4rem  var(--mainTextColor));
+}
+
+@keyframes risingMoon {
+    0% {
+        left: 0;
+        bottom:0;
+    }
+    20% {
+        left: 5%;
+        bottom: 20%;
+    }
+    40% {
+        left: 10%;
+        bottom: 40%;
+    }
+    60% {
+        left: 15%;
+        bottom: 60%;
+        transform: scale(1) rotateZ(0deg);;
+    }
+    100% {
+        left: 30%;
+        bottom: 70%;
+        transform: scale(.8) rotateZ(20deg);
+    }
+    
 }
