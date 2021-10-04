@@ -37,15 +37,15 @@
 .skills-column {
     position: relative;
     padding: 1rem;
-    width: 13em;
+    width: 15em;
     min-width: calc(var(--minWidth) - 6rem);
     opacity: 0;
 } 
 .skills-column.left {
-    left: -100px
+    left: -120px
 }
 .skills-column.right {
-    left: 100px
+    left: 120px
 }
 .el-skill {
     margin: 1rem 0;
@@ -133,7 +133,7 @@
     font-weight: bold;
 }
 
-/* EDUCATION & EXPERIENCE*/
+/* EDUCATION */
 
 #educationContainer, #experienceContainer, #contactsContainer {
     flex-direction: column;
