@@ -45,7 +45,7 @@ a {
     margin-right: -.5em;
 }
 .link-navigation:hover {
-    border-bottom: 1px solid var(--mainTextColor);
+    text-decoration: underline;
 }
 .icon-navigation:hover { 
     transform: scale(1.4);
