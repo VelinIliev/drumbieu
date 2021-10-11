@@ -13,10 +13,12 @@ let randomColor = () =>
                     ${randomRange(.4, .6).toFixed(1)})`;
 
 let fillingStarsArr = ( (x,y) => {
+    let randomRadius = canvas.width > 500 ? randomRange(.5,1.5).toFixed(1) : randomRange(.2,0.5).toFixed(1);
+
     let element = {
         x_position: x,
         y_position: y,
-        radius: randomRange(.5,1.5).toFixed(1),
+        radius: randomRadius,
         x_move: randomRange(-1,1).toFixed(1),
         y_move: randomRange(-1,1).toFixed(1),
     };
