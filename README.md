@@ -10,7 +10,7 @@ There are two branches, one is with pure css and other with SASS
 
 ## Links
 
-- Live Site URL: [http://drumbi.eu/](http://drumbi.eu/)  
+- Live Site URL: [https://veliniliev.github.io/drumbieu/](https://veliniliev.github.io/drumbieu/)  
 
 ## Built with
 
