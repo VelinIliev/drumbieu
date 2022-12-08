@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+</head>
+<body>
+  <div class="container">
+    <div class="top">
+      <h1>Simple, traffic-based pricing</h1>
+      <h2>Sign-up for our 30-day trial. No credit card required. </h2>
+    </div>
+    <div class="pricing">
+      <div class="topPricing">
+       
+        <div class="previews"><span class="previewsValue">100K</span> Pageviews</div>
+        <div class="price"><span>$</span><span class="priceValue">16.00</span> /month</div>
+      </div>
+      <div class="middlePricing">
+        <input type="range" min="0" max="4" value="2" class="slider" name="slider" id="myRange">
+        <div class="toggleContainer">
+          <div class="monthlyToggle">Monthly Billing</div>
+          <div class="toggle">
+            <div class="circle monthly"></div>
+          </div>
+          <div class="billing">Yearly Billing </div>
+          <div class="discount">25% discount</div>
+        </div>
+  
+      </div>
+      <div class="divider"> </div>
+      <div class="bottomPricing">
+        <ul>
+          <li>Unlimited websites</li>
+          <li>100% data ownership</li>
+          <li>Email reports</li>
+        </ul>
+        <button>Start my trial</button>
+      </div>
+    </div>
+  </div>
+  <script src="./javascript/main.js"></script>
+  </div>
+</body>
+</html>

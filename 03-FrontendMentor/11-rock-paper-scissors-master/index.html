@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+<body>
+  <div class="scoreContainer">
+    <div class="selectedGame">
+      ROCK<br>
+      PAPER<br>
+      SCISSORS
+    </div>
+    <div class="currentScore">
+      <div class="1">
+        <div class="scoreTitle">YOU</div>
+        <div class="scoreResult playerResults">0</div>
+      </div>
+      <div class="2">
+        <div class="scoreTitle">DRAW</div>
+        <div class="scoreResult drawResults">0</div>
+      </div>
+      <div class="3">
+        <div class="scoreTitle">AI</div>
+        <div class="scoreResult computerResults">0</div>
+      </div>
+    </div>
+  </div>
+  <div class="playContainer">
+    <div class="paper clickable">
+      <div class="inner paperi clickable"></div>
+    </div>
+    <div class="scissors clickable">
+      <div class="inner scissorsi clickable"></div>
+    </div>
+    <div class="rock clickable">
+      <div class="inner rocki clickable">
+      </div>
+    </div>
+    <div class="paper-w winner">
+      <div class="inner paperi"></div>
+    </div>
+    <div class="scissors-w winner">
+      <div class="inner scissorsi"></div>
+    </div>
+    <div class="rock-w winner">
+      <div class="inner rocki">
+      </div>
+    </div>
+    <div class="yourChoice invisible">YOU PICKED</div>
+    <div class="computerChoice invisible">THE HOUSE PICKED</div>
+    <div class="winStatus invisible"></div>
+    <button class="playAgain invisible">PLAY AGAIN</button>
+  </div>
+  
+</div>
+  <div class="rules">
+    RULES
+  </div>
+  <div id="id01" >
+    <div class="closeTag">
+        &times;
+    </div>
+  </div>
+
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="./javascript/main.js"></script>
+</body>
+</html>

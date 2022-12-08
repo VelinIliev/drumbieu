@@ -1,0 +1,132 @@
+:root {
+    --grayishBlue: hsl(237, 18%, 59%);
+    --numbersTop: hsl(345, 95%, 62%);
+    --numbersbottom: hsl(345, 95%, 68%);
+
+    --white1: hsl(0, 0%, 100%);
+    --darkDesaturatedBlue: hsl(236, 21%, 26%);
+    --topCard: hsl(236, 21%, 26%);
+    --bottomCard: hsl(236, 21%, 32%);
+    --veryDarkBlue: hsl(235, 16%, 14%);
+    --background: hsl(234, 17%, 12%);
+}
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@1,700&display=swap');
+/* font-family: 'Red Hat Text', sans-serif; */
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/pattern-hills.svg), url(../images/bg-stars.svg),
+                linear-gradient(var(--veryDarkBlue), var(--darkDesaturatedBlue));
+    /* background-image: url(../images/pattern-hills.svg), url(../images/bg-stars.svg); */
+    /* background-blend-mode: multiply; */
+    background-repeat:  no-repeat, repeat, no-repeat;
+    background-position: left bottom, left top, 0;
+    background-size: 100vw, 100vw, 100vw;
+    /* border: 1px solid red; */
+}
+.container {
+    width: 60%;
+    height: 90%;
+    min-height: 25em;
+    border: 1px solid transparent;
+    margin:auto;
+}
+h1 {
+    font-size: 1.75em;
+    box-sizing: border-box;
+    margin-top: 4em;
+    color: white;
+    /* border: 1px solid red; */
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    transform: scaleY(0.75);
+}
+.counter {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em ;
+    /* border: 1px solid red; */
+}
+.days, .hours, .minutes, .seconds {
+    /* border: 1px solid red; */
+    width: 10em;
+    height: 10em;
+    margin-left: 1em;
+}
+.topBlock, .bottomBlock{
+    width: 100%;
+    height: 49%;
+    border-radius: .5em;
+    overflow: hidden;
+}
+.topBlock {
+    background-color: var(--topCard);
+}
+.bottomBlock{
+    background-color: var(--bottomCard);
+}
+.line {
+    height: 2%;
+}
+.numbersTop, .numbersBottom {
+    position: relative;
+    text-align: center;
+    font-size: 6em;
+    font-weight: 700;
+}
+.numbersTop {
+    color: var(--numbersTop);
+    top: 1.4rem;
+}
+.numbersBottom {
+    color: var(--numbersbottom);
+    top: -3.7rem;
+}
+.botomTitile {
+    margin-top: 2em;
+    text-align: center;
+    font-weight: 700;
+    color: var(--white1);
+    transform: scaleY(0.75);
+    /* border: 1px solid red; */
+}
+.socialmedia {
+    /* border: 1px solid red; */
+    text-align: center;
+}
+img {
+    margin-left: 1.5em;
+}
+img:hover {
+    cursor: pointer;
+    filter: hue-rotate(100deg) contrast(250%);
+}
+.minutes>.topBlock {
+    transform-origin: bottom right;
+    transform: scaleY(1);
+}
+.minutes>.bottomBlock {
+    transform-origin: top right;
+    transform: scaleY(1);
+}
+@media only screen and (max-width: 480px) {
+    .days, .hours, .minutes, .seconds {
+        transform: scale(.7);
+        margin-left: -.5em;
+    }
+}
+@media only screen and (max-width: 340px) {
+    .days, .hours, .minutes, .seconds {
+        transform: scale(.5);
+        margin-left: -2em;
+    }
+}

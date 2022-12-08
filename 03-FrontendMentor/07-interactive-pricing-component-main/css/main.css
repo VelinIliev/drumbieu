@@ -1,0 +1,210 @@
+:root {
+    /* ### Primary */
+    --fullSliderBar: hsl(174, 77%, 80%);
+    --sliderBackround: hsl(174, 86%, 45%);
+    --discountBackground: hsl(14, 92%, 95%);
+    --discountText: hsl(15, 100%, 70%);
+    --CTAText: hsl(226, 100%, 87%);
+    /* ### Neutral */
+    --pricingComponentBackground: hsl(0, 0%, 100%);
+    --mainBackground: hsl(230, 100%, 99%);
+    --emptySliderBar: hsl(224, 65%, 95%);
+    --toggleBackground: hsl(223, 50%, 87%);
+    --text: hsl(225, 20%, 60%);
+    --textAndCTABackground: hsl(227, 35%, 25%);
+}
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+/* font-family: 'Manrope', sans-serif; Weights: 600, 800 */
+body, html {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+body {
+    background-color: #f9faff;
+    background: url(../images/pattern-circles.svg) no-repeat right 52vw top 10vh, 
+                    url(../images/bg-pattern.svg) no-repeat;
+    /* background-position: right 52vw top 10vh, 0 0; */
+    /* background-repeat: no-repeat; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+}
+h1, h2 {
+    text-align: center;
+}
+h1 {
+    font-size: 1.8em;
+    margin-top: 3.7em;
+    color: var(--textAndCTABackground);
+}
+h2 {
+    font-size: .94em;
+    margin-top: -.3em;
+    color: var(--text);
+}
+.container {
+    width: 60%;
+    max-width: 544px;
+    min-width: 360px;
+}
+.pricing {
+    box-sizing: border-box;
+    padding: 1em 2.6em;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+    width: 100%;
+    height: 24.5em;
+    background-color: var(--mainBackground);
+    border-radius: .5em;
+    box-shadow: 0 .3em .5em var(--text);
+}
+.topPricing {
+    margin-top: 2em;
+    display: flex;
+    height: 3em;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.slider {
+    margin-top: 2.7em;
+    -webkit-appearance: none;
+	display: block;
+	width: 100%;
+	height: .5em;
+	padding: 0;
+	border-radius: .6em;
+	background: linear-gradient(90deg, var(--sliderBackround) 50%, var(--emptySliderBar) 50%);
+	box-sizing: content-box;
+    cursor: pointer;
+}
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	width: 3em;
+	height: 3em;
+	border-radius: 50%;
+	background: no-repeat center url(../images/icon-slider.svg), var(--sliderBackround);
+    box-shadow: 0px .8em 2em var(--sliderBackround);
+}
+.slider::-moz-range-thumb {
+    -moz-appearance: none;
+    width: 3em;
+	height: 3em;
+    border: 0 solid transparent;
+	border-radius: 50%;
+	background: no-repeat center url(../images/icon-slider.svg), var(--sliderBackround) ;
+}
+.previews {
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--text);
+    /* font-size: 1.05em; */
+    margin-top: 1em;
+}
+.price {
+    color: var(--text);
+    font-weight: 800;
+    margin-top: -.2em;
+}
+.price>span {
+    font-size: 2.6em;
+    color: var(--textAndCTABackground);
+}
+.toggleContainer {
+    margin-top: 4.4em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 800;
+    color: var(--text);
+    font-size: .8em;
+}
+.toggle {
+    position: relative;
+    width: 3.6em;
+    height: 1.5em;
+    border-radius: 1em;
+    margin-left: 1em;
+    margin-right: .4em;
+    background-color: var(--toggleBackground);
+    transition: background-color .5s;
+} 
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    width: 1em;
+    height: 1em;
+    background-color: var(--pricingComponentBackground);
+    top: .22em;
+    transition: left .5s;
+} 
+.monthly {
+    left: .7em;
+}
+.yearly {
+    left: 2em;
+}
+.discount {
+    background-color: var(--discountBackground);
+    color: var(--discountText);
+    width: 7em;
+    text-align: center;
+    margin-right: 1em;
+    margin-left: 1em;
+    border-radius: .2em;
+}
+.divider {
+    width: 118%;
+    margin-left: -2.6em;
+    margin-top: 2.5em;
+    border: 1px solid var(--toggleBackground);
+}
+.bottomPricing {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+ul {
+    margin-top: 2.4em;
+    margin-left: 0em;
+    padding: 0;
+    list-style: none;
+    font-size: .8em;
+    font-weight: 800;
+    line-height: 2.2em;
+    color: var(--text);
+}
+li::before {
+    content: url(../images/icon-check.svg);
+    margin-right: 2em;
+}
+button {
+    width: 12.5em;
+    height: 3.2em;
+    margin-right: .3em;
+    border-radius: 2em;
+    background-color: var(--textAndCTABackground);
+    color: var(--CTAText);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 750px) {
+    .container {
+        width: 100%;
+    }
+    .bottomPricing {
+        display: flex;
+        flex-direction: column;
+    }
+    .pricing {
+        height: 30em;
+        margin-top: 1em;
+    }
+    .toggleContainer {
+        justify-content: space-between;
+    }
+} 

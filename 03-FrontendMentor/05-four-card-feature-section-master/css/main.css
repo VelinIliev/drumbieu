@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+/* font-family: 'Poppins', sans-serif; Weights: 200, 400, 600*/
+
+:root {
+    --teamBuilder: hsl(0, 78%, 62%);
+    --supervisor: hsl(180, 62%, 55%);
+    --karma: hsl(34, 97%, 64%);
+    --calculator: hsl(212, 86%, 64%);
+    --titles: hsl(234, 12%, 34%);
+    --maintText: hsl(229, 6%, 66%);
+    --background: hsl(0, 0%, 98%);
+    --backroundBox: hsl(0, 0%, 100%);
+    --shadow: hsla(212, 86%, 64%, .2);
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    text-align: center;
+    /* overflow: hidden; */
+}
+body {
+    display: flex;
+    justify-content: center;
+    background-color: var(--background);
+    /* background-image: url(../design/desktop-design.jpg); */
+    background-repeat: no-repeat;
+    font-family:'Poppins', sans-serif;
+}
+h1 {
+    margin-top: 2.1em;
+    font-size: 2.45em;
+    color: var(--titles);
+    font-weight: 200;
+}
+h2 {
+    color: var(--titles);
+    margin-top: -.85em;
+    font-size: 2.45em;
+    font-weight: 600;
+}
+p {
+    font-weight: 400;
+    margin-top: -.85em;
+    color: var(--maintText);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid red; */
+}
+.sectionsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.6em;
+    /* border: 1px solid red; */
+}
+.box {
+    box-sizing: border-box;
+    position: relative;
+    width: 23.5em;
+    height: 16.7em;
+    margin: 1em;
+    margin-top: 1.8em;
+    border-radius: .5em;
+    text-align: left;
+    padding-top: 1em;
+    padding-left: 2.1em;
+    padding-right: 2.1em;
+    font-weight: 600;
+    background-color: var(--backroundBox);
+    box-shadow: .5em .5em 1em var(--shadow);
+}
+h3 {
+    color: var(--titles);
+    letter-spacing: .09em;
+    /* font-size-adjust: 1em; */
+}
+h3~p {
+    /* margin-top: rem; */
+    font-size: .9em;
+    color: var(--maintText);
+    /* color: red */
+}
+img {
+    position: absolute;
+    right: 2em;
+    bottom: 2em;
+}
+.titleContainer {
+    width: 35em;
+    /* border: 1px solid red; */
+}
+.supervisor {
+    border-top: 5px solid var(--supervisor);
+}
+.teamBuilder {
+    border-top: 5px solid var(--teamBuilder);
+}
+.calculator {
+    border-top: 5px solid var(--calculator);
+}
+.karma {
+    border-top: 5px solid var(--karma);
+}
+@media only screen and (max-width: 1134px) {
+    .sectionsContainer {
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .box{ 
+        width: 90vw;
+        min-width: 14em;
+        max-width: 40em;
+    }
+    h1, h2 {
+        font-size: 1.5em;
+    }
+    .titleContainer {
+        width: 98vw;
+        min-width: 14em;
+        max-width: 40em;
+    }
+}

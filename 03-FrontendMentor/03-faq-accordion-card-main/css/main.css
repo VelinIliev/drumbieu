@@ -1,0 +1,187 @@
+:root {
+    /* Text */
+    --title: hsl(238, 29%, 16%);
+    /* - Very dark desaturated blue: hsl(238, 29%, 16%); */
+    --arrows: hsl(14, 88%, 65%);
+    /* - Soft red: hsl(14, 88%, 65%) */
+    --subTitle:  hsl(237, 12%, 33%);
+    /* - Very dark grayish blue: hsl(237, 12%, 33%); */
+    --paraText: hsl(240, 6%, 50%);
+    /* - Dark grayish blue: hsl(240, 6%, 50%); */
+
+    /* Gradient */
+    --gradientTop: hsl(273, 75%, 66%);
+    /* - Soft violet: hsl(273, 75%, 66%) */
+    --gradientBottom: hsl(240, 73%, 65%);
+    /* - Soft blue: hsl(240, 73%, 65%) */
+
+    /* Dividers */
+    --dividers: hsl(240, 5%, 91%);
+    /* - Light grayish blue: hsl(240, 5%, 91%) */
+}
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&display=swap');
+/* font-family: 'Kumbh Sans', sans-serif; 400/700 */
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(var(--gradientTop), var(--gradientBottom));
+    background-repeat: no-repeat;
+}
+.container {
+    box-sizing: border-box;
+    width: 64em;
+    height: 34em;
+    border-radius: 1.5em;
+}
+.secondContainer {
+    box-sizing: border-box;
+    float: right;
+    display: flex;
+    flex-direction: row;
+    width: 61.2em;
+    border-radius: 1.5em;
+    box-shadow: 1em 1em 2em var(--title);
+    background-color: white;
+}
+.imagesContainer {
+    width: 50%;
+    overflow: hidden;
+    height: 34em    
+}
+.textContainer {
+    width: 50%;
+    box-sizing: border-box;
+    min-height: 34em;
+    padding-left: .9rem;
+    padding-top: 3rem;
+    padding-right: 6.1rem;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+.pattern {
+    position: relative;
+    left: -38.7em;
+    top: -19.7em;
+}
+.womanOnline {
+    position: relative;
+    left: -5.7em;
+    top: -58.7em;
+}
+.container::after {
+    content: url(../images/illustration-box-desktop.svg);
+    position: relative;
+    z-index: 10000;
+    top:-20.3em;
+    left:-3.3em
+}
+h1 {
+    font-size: 2.2em;
+    font-weight: 700;
+}
+.hidden {
+    display: none;
+    color: var(--paraText);
+}
+.questionsContainer {
+    margin-top: 2.3em;
+}
+.question {
+    color: var(--subTitle);
+    width:100%;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+.question:hover {
+    cursor: pointer;
+    color: var(--arrows);
+}
+.text {
+    display: inline;
+}
+.arrow {
+    float: right;
+    position: relative;
+    top: .35em;
+    right: .5em
+}
+.divider {
+    height: 1px;
+    background-color: var(--dividers);
+}
+.reveal {
+    display: block;
+    margin-top: 1em;
+}
+.rotate {
+    transform: rotate(180deg);
+}
+.bold {
+    font-weight: bold;
+}
+.womanOnlineMobile {
+    display: none;
+}
+.patternMobile {
+    display: none;
+}
+.attribution { 
+    color: white;
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 1em;
+}
+.attribution a { 
+    color: hsl(180, 2%, 71%); 
+}
+
+@media only screen and (max-width: 960px) {
+    .container {
+    width: 22em;
+    margin-bottom: 1.9em;
+    }
+    .secondContainer {
+        width: 22em;
+        flex-direction: column;
+        height: 36em;
+    }
+    .imagesContainer {
+        width: 100%;
+        height: 4em;
+        overflow: visible;
+    }
+    .textContainer {
+        width: 100%;
+        padding-right: 1em;
+        height: 10em;
+    } 
+    .container::after {
+        display: none;
+    } 
+    .pattern {
+        display: none;
+    } 
+    .womanOnline {
+        display: none;
+    }
+    .patternMobile {
+        display: block;
+        margin: auto;
+    }
+    .womanOnlineMobile {
+        display: block;
+        position: relative;
+        top: -14em;
+        left:1em
+    }
+
+}
