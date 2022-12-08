@@ -1,0 +1,42 @@
+
+.container_main {
+    box-sizing: border-box;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+}
+@font-face {
+    font-family: LRTOksana;
+    src: url(Fonts/LRT\ Oksana.ttf);
+}
+.column>img {
+    width: 95%;
+    height: 13.5em;
+    opacity: 85%;
+}
+.column {
+    box-sizing: border-box;
+    float: left;
+    width: 25%;
+    text-align: center;
+    font-family: LRTOksana;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 1.7em;
+}
+.surname {
+    text-transform: uppercase;
+}
+.position {
+    font-size: .9em;
+}
+.email {
+    font-size: 0.8em;
+}
+.fab {
+    color: #808080;
+    font-size: 1.3em;
+}
+.fa-facebook-square:hover {color: #3b579d;}
+.fa-linkedin:hover {color: #3b579d;}

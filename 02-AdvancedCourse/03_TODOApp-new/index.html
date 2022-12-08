@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Todo App</title>
+</head>
+<body>
+    <div class="page">
+        <header>Simple Todo App</header>
+        <main class="todo-app">
+            <div class="todo-add">
+                <input class="inputTodo" type="text" autofocus placeholder="add new todo ...">
+                <button class="todo-add-btn">Add</button>
+            </div>
+            <div class="filter">
+                <form action="">
+                    <label for="all" class="all-radio">
+                        <input type="radio" id="all" name="filter" value="all" checked> All 
+                    </label>
+                    <label for="completed-radio" class="completed-radio">
+                        <input type="radio" id="completed-radio" name="filter" value="completed"> Completed 
+                    </label> 
+                    <label for="active" class="active-radio">
+                        <input type="radio" id="active" name="filter" value="active"> Active 
+                    </label> 
+                </form>
+            </div>
+            <ul class="todo-items">
+                <!--  -->
+            </ul>
+            <div class="summary"> 
+                <div class="todos-total">total items: <span class="output"></span></div>
+                <div class="todos-completed">completed items: <span class="output-completed"></span></div>
+                <button class="btnClearCompleted hidden">Delete completed</button>
+                <div class="clearfix"></div>
+            </div>
+            
+        </main>
+        <footer></footer>
+    </div>
+
+    <script src="./todoApp-locoalstorage.js"></script>
+</body>
+</html>

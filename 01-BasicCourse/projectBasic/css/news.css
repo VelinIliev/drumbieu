@@ -1,0 +1,35 @@
+.container_main {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+}
+.column1, .column2, .column3 {
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+    width: 33.3%;
+    height: 33em;
+    text-align: center;
+}
+.column1>img, .column2>img, .column3>img {
+    width: 90%;
+}
+.column2>img {
+    position: absolute;
+    bottom: 0;
+    left: 1em;
+}
+.clearfix {
+    clear: both;
+}
+.text {
+    font-family: LRTOksana;
+    font-size: 1.6em;
+    line-height: 1.6em;
+    text-align: center;
+}
+.undl {
+    text-decoration: underline;
+    font-weight: bold;
+}

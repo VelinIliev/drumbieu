@@ -1,0 +1,141 @@
+$backgroundColor: #333;
+$headerAndFooter: #444;
+$firstTodoColor: #fff;
+$secondTodoColor: #ccc;
+$buttonsColor: #7fffd4;
+$titleColor: $buttonsColor;
+$completedColor: #999;
+$completedColorTextAndStroke: #444;
+$TodoAndButtonTextColor: #000;
+$secondTextColor: #fff;
+$trashColor: #8e0000;
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    background-color: $backgroundColor;
+}
+.page {
+    min-width: 448px;
+    max-width: 640px;
+    margin: auto;
+}
+header {
+    font-size: 2em;
+    padding: 2em;
+    color: $titleColor;
+    text-align: center;
+}
+.todo-add {
+    text-align: center;
+    padding: 1em;
+    background-color: $headerAndFooter;
+}
+
+.todo-items {
+    background-color: $firstTodoColor;
+    color: $TodoAndButtonTextColor;
+    &>:nth-child(2n){
+        background-color: $secondTodoColor;
+    }
+    li {
+        font-size: 1.2em;
+        padding-left: 1em;
+        padding-top: .5em;
+        padding-bottom: .5em;
+        
+        &:hover {
+            cursor: pointer;
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+        div {
+            float: right;
+            padding-right: 1em;
+            color: $trashColor;
+        }
+        .created{ 
+            float: right;
+            font-size: .5em;
+            margin-right: .6em;
+            padding-top: .9em;
+        }
+    }
+}
+
+[type=text]{
+    border-width: 0;
+    width: 24em;
+    height: 2em;
+    background-color: $secondTodoColor;
+    border-radius: .3em;
+
+    &:focus{
+        outline: none;
+        border: .12em solid $buttonsColor;
+        border-radius: .3em;
+    }
+}
+
+.todos-total, .todos-completed {
+    float: left;
+    padding: .5em 1em;
+    background-color: $headerAndFooter;
+    color: $secondTextColor;
+    width: 50%;
+}
+.todo-add-btn, .btnClearCompleted {
+    border-width: 0;
+    background-color: $buttonsColor;
+    color: $TodoAndButtonTextColor;
+    border-style: none;
+    cursor: pointer;
+    &:focus, &:hover {
+        outline: none;
+        box-shadow: 0 0 1em $buttonsColor;
+        font-weight: bold;
+    }
+}
+.todo-add-btn {
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+    margin-left: 1em;
+}
+.btnClearCompleted {
+    float: right;
+    margin-right: 2em;
+    margin-top: -.8em;
+    width: 12em;
+    height: 2em;
+    border-radius: 1em;
+}
+.todo-items>.completed {
+    color: $completedColorTextAndStroke;
+    background-color: $completedColor;
+    background-image: linear-gradient(0deg,transparent 47%, $completedColorTextAndStroke 50%, transparent 53%);
+}
+.summary {
+    background-color: $headerAndFooter;
+}
+.clearfix {
+    clear: both;
+}
+.hidden {
+    display: none;
+}
+
+.filter {
+    background-color: $headerAndFooter;
+    color: $secondTextColor;
+    padding: 1em;
+}
+.all-radio, .completed-radio {
+    &::after {
+        content: "|";
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    
+}

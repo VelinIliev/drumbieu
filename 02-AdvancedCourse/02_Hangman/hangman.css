@@ -1,0 +1,132 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Pangolin', cursive;
+    background-color: black;
+}
+
+.container {
+    margin: auto;
+    width: 60em;
+    height: 40em;
+    border: 3px solid black;
+    background-image: url(images/background.png);
+}
+
+.title {
+    box-sizing: border-box;
+    /* height: 1.8em; */
+    font-size: 2em;
+    text-align: center;
+    letter-spacing: .5em;
+    padding: .25em;
+    background-color: black;
+    color:white;
+}
+
+.playArea {
+    box-sizing: border-box;
+    float: left;
+    width: 35em;
+    height: 36.5625em;
+    /* border: 1px solid blue; */
+}
+
+.hangImage {
+    box-sizing: border-box;
+    float: left;
+    width: 25em;
+    height: 36.5625em;
+    /* border: 1px solid green; */
+}
+.displayWord {
+    box-sizing: border-box;
+    /* font-size: 2em; */
+    text-align: center;
+    height: 20em;
+    /* padding-top: 1em; */
+    border: 1px solid transparent;
+}
+
+.alphabet {
+    padding: 1em;
+    font-size: 2em;
+    box-sizing: border-box;
+    height: 8.28125em;
+    border: 1px solid transparent;
+}
+
+.letters {
+    width: 1.1em;
+    height: 1.1em;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20%;
+    float: left;
+    margin: .15em;
+    background-color: whitesmoke;
+    text-transform: uppercase;
+    /* margin-right: .35em; */
+}
+.hideLetters {
+    background-color: black;
+}
+.hidden {
+    display:none;
+}
+.letters:hover {
+    background-color: grey;
+    color:white;
+    cursor: pointer;
+}
+
+
+.categorie {
+    margin: auto;
+    padding-top: 3em;
+    text-align: center;
+    /* border: 1px solid green; */
+}
+
+.playWord {
+    font-size: 3em;
+    padding-top: 2em;
+    /* background-color: black; */
+    color: white;
+    /* border: 1px solid green; */
+}
+
+.playWord {
+    text-transform: uppercase;
+    letter-spacing: .3em;
+}
+
+.chosenCategorie {
+    font-size: 1.5em;
+    padding-top: 2em;
+}
+
+.btnNewGame {
+    /* display: inline-block; */
+    margin-left: 12.7em;
+    margin-top: 2em;
+
+}
+
+.finalState {
+    font-size: 7em;
+    color: white;
+    margin-top: 1.3em;
+}
+
+.remainingAttempts {
+    color: white;
+    font-size: 1.3em;
+    margin-top: 2.5em;
+}
+
+.wordToguess {
+    color: white;
+    text-align: center;
+}

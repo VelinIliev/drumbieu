@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman - the game</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="hangman.css">
+</head>
+<body>
+    <!-- https://bg.wikipedia.org/wiki/Бесеница -->
+    <div class="container">
+        <div class="title"> БЕСЕНИЦА</div>
+        <div class="playArea"> 
+            <div class="displayWord"> 
+                <div class="categorie">Изберете категория:
+                    <select name="selectCategorie" id="selectCategorie">
+                        <option value="towns">Градове</option>
+                        <option value="fruits">Плодове</option>
+                        <option value="vegetables">Зеленчуци</option>
+                    </select>
+                    <button class="btnOK">OK</button>
+                    
+                </div>
+                <div class="chosenCategorie hidden"></div>
+                <div class="playWord"> </div>
+                <div class="remainingAttempts hidden"></div>
+                <div class="finalState hidden"></div>
+            </div>
+            <div class="alphabet"> 
+                <div class="displayAlphabet hidden">
+                    <div class="letters">а</div>
+                    <div class="letters">б</div>
+                    <div class="letters">в</div>
+                    <div class="letters">г</div>
+                    <div class="letters">д</div>
+                    <div class="letters">е</div>
+                    <div class="letters">ж</div>
+                    <div class="letters">з</div>
+                    <div class="letters">и</div>
+                    <div class="letters">й</div>
+                    <div class="letters">к</div>
+                    <div class="letters">л</div>
+                    <div class="letters">м</div>
+                    <div class="letters">н</div>
+                    <div class="letters">о</div>
+                    <div class="letters">п</div>
+                    <div class="letters">р</div>
+                    <div class="letters">с</div>
+                    <div class="letters">т</div>
+                    <div class="letters">у</div>
+                    <div class="letters">ф</div>
+                    <div class="letters">х</div>
+                    <div class="letters">ц</div>
+                    <div class="letters">ч</div>
+                    <div class="letters">ш</div>
+                    <div class="letters">щ</div>
+                    <div class="letters">ъ</div>
+                    <div class="letters">ь</div>
+                    <div class="letters">ю</div>
+                    <div class="letters">я</div>
+                </div>
+                <div class="wordToguess hidden"></div>
+                <button class="btnNewGame hidden">Започни отначало</button>
+            </div>
+            
+            
+        </div>
+        
+        <div class="hangImage"> 
+            <img id="hangManImage" src="images/hangman.svg" alt="">
+        </div>
+        
+    </div>
+    <script src="hangman.js"></script>
+</body>
+</html>

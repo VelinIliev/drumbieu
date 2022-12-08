@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number</title>
+    <link rel="stylesheet" href="guessTheNumberNew.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Guess The Number</h1>
+        <div class="selectLevelText">
+            <div class="firstEnter"> Select Level:
+            <select name="selectLevel" id="selectLevel">
+                <option value="level1">Easy</option>
+                <option value="level2">Medium</option>
+                <option value="level3">Advanced</option>
+            </select>
+            <span class="dipslayLevel"> </span>
+            <button id="btnPlay">Play</button>
+        </div>
+            <div class="endGame">
+                <div class="endText"></div>
+                <button id="btnNewGame">Start new game</button>
+            </div>
+         </div>
+        <div class="playGround">
+            <h2 class="guessTheNumberText"> </h2>
+            <input type="number" name="userNumber" id="userNumber">
+            <button id="btnGuess">Guess</button>
+            <button id="btnReset">Reset game</button>
+            <p id="countTries"> </p>
+        </div>
+        <div class="results">
+            <h3>Guess Status</h3>
+        </div>
+    </div>
+    <script src="guessTheNumberNew.js"></script>
+</body>
+</html>

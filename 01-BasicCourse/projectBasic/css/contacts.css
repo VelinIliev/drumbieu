@@ -1,0 +1,31 @@
+iframe {
+    position: absolute;
+    top: 20em;
+    left: 5em;
+    width: 33em;
+    height: 20em;
+}
+.text {
+    position: absolute;
+    top: 20em;
+    left: 43em;
+    font-family: LRTOksana;
+    line-height: 2em;
+}
+.email {
+    font-size: 1.67em;
+}
+.others {
+    font-size: 1.2em;
+}
+.media {
+    font-size: 1.8em;
+}
+.fab:hover {
+    color: #999;
+}
+.fa-facebook-square {color: #3b579d;}
+.fa-linkedin {color: #0077B5;}
+.fa-twitter-square {color: #00abf1;}
+.fa-youtube-square {color: #b62025;}
+.fa-google-plus-square {color: #b62025;}

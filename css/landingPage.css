@@ -76,8 +76,19 @@
     position: absolute;
     width: 5rem;
     left: 0;
-    bottom:0;
-    animation: risingMoon 20s both linear;
+    /* bottom:0; */
+    offset-path: path("M32.6,555.6c0,0,41.4-279.1,95.8-365.1S243.3,78.9,243.3,78.9");
+    /* border: 1px solid red; */
+    /* animation: risingMoon 20s both linear; */
+    animation: fly 9s linear both;
+}
+@keyframes fly { 
+    0% {
+        offset-distance: 0%;
+    }
+    100% {
+        offset-distance: 100%;
+    }
 }
 
 @keyframes risingMoon {

@@ -1,0 +1,138 @@
+.container {
+    position: relative;
+    width: 75em;
+    min-width: 600px;
+    height: 50.94em;
+    min-height: 407px;
+    margin: 0 auto;
+    border: 1px solid transparent;
+    box-sizing: border-box;
+}
+/* ****** */
+/* HEADER */
+/* ****** */
+
+@font-face {
+    font-family: Vrinda;
+    src: url(Fonts/vrinda.ttf);
+}
+nav {
+    box-sizing: border-box;
+    width: 75em;
+    height: 4em;
+    background-color: #b32228;
+    margin-top: 3.375em;
+}
+.nav>li {
+    float: right;
+    margin-right: 1.5em;
+    font-family: Vrinda;
+    font-size: 1.7em;
+    text-transform: uppercase;
+    word-spacing: -0.2em;
+    font-weight: bold;
+    list-style: none;  
+    transform: scaleY(0.8);
+    padding-top: .8em;
+}
+a:link, a:visited, a:active {
+    text-decoration: none;
+    color: black;
+}
+.nav>li>a:hover {
+    color: #999;
+}
+.clearfix {
+    clear: both;
+}
+/* ************* */
+/* SECOND HEADER */
+/* ************* */
+
+.second_header {
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 3.2em;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+.second_header>img {
+    width: 3em;
+}
+h1, .second_header>img {
+    float: left;
+}
+h1 {
+    margin-top: 0.2em;
+    font-family: Vrinda;
+    font-size: 2.75em;
+    text-transform: uppercase;
+    font-weight: bold;
+    transform: scaleY(0.8);
+    width: 90%; 
+}
+
+/* ********** */
+/*   Footer   */
+/* ********** */
+
+@font-face {
+    font-family: LRTOksana;
+    src: url(Fonts/LRT\ Oksana.ttf);
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0em;
+    width: 75em;
+    height: 3em;
+    background-color: #7a7a7aab;
+    text-align: center;
+    font-family: LRTOksana;
+    font-size: 1em;
+    color: #FFF;
+}
+footer>img {
+    float: left;
+    margin-left: 12em;
+    width: 5em;
+    margin-top: 0.2em;
+}
+.footerText {
+    float: left;
+    margin-top: 1.4em;
+    margin-left: 1em;
+}
+
+/* ********** */
+/*   DropDown */
+/* ********** */
+.dropDown:hover{
+    color: #999;
+}
+.dropDown>ul{
+    display: none;
+    position: absolute;
+}
+.dropDown:hover>ul{
+    display: block;
+}
+
+.dropDown>ul>li{
+    padding-left: .3em;
+    padding-top: .4em;
+    width: 4em;
+    height: 1.5em;
+    background-color: #b32228; 
+    /* border: 1px solid black; */
+
+}
+.dropDown>ul>li:hover{
+
+    /* text-decoration: underline; */
+    background-color: #b36265; 
+    color: #999;
+
+}

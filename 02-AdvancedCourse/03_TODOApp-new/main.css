@@ -1,0 +1,135 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background-color: #333;
+}
+
+.page {
+  min-width: 448px;
+  max-width: 640px;
+  margin: auto;
+}
+
+header {
+  font-size: 2em;
+  padding: 2em;
+  color: #7fffd4;
+  text-align: center;
+}
+
+.todo-add {
+  text-align: center;
+  padding: 1em;
+  background-color: #444;
+}
+
+.todo-items {
+  background-color: #fff;
+  color: #000;
+}
+.todo-items > :nth-child(2n) {
+  background-color: #ccc;
+}
+.todo-items li {
+  font-size: 1.2em;
+  padding-left: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.todo-items li:hover {
+  cursor: pointer;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.todo-items li div {
+  float: right;
+  padding-right: 1em;
+  color: #8e0000;
+}
+.todo-items li .created {
+  float: right;
+  font-size: 0.5em;
+  margin-right: 0.6em;
+  padding-top: 0.9em;
+}
+
+[type=text] {
+  border-width: 0;
+  width: 24em;
+  height: 2em;
+  background-color: #ccc;
+  border-radius: 0.3em;
+}
+[type=text]:focus {
+  outline: none;
+  border: 0.12em solid #7fffd4;
+  border-radius: 0.3em;
+}
+
+.todos-total, .todos-completed {
+  float: left;
+  padding: 0.5em 1em;
+  background-color: #444;
+  color: #fff;
+  width: 50%;
+}
+
+.todo-add-btn, .btnClearCompleted {
+  border-width: 0;
+  background-color: #7fffd4;
+  color: #000;
+  border-style: none;
+  cursor: pointer;
+}
+.todo-add-btn:focus, .todo-add-btn:hover, .btnClearCompleted:focus, .btnClearCompleted:hover {
+  outline: none;
+  box-shadow: 0 0 1em #7fffd4;
+  font-weight: bold;
+}
+
+.todo-add-btn {
+  border-radius: 50%;
+  width: 5em;
+  height: 5em;
+  margin-left: 1em;
+}
+
+.btnClearCompleted {
+  float: right;
+  margin-right: 2em;
+  margin-top: -0.8em;
+  width: 12em;
+  height: 2em;
+  border-radius: 1em;
+}
+
+.todo-items > .completed {
+  color: #444;
+  background-color: #999;
+  background-image: linear-gradient(0deg, transparent 47%, #444 50%, transparent 53%);
+}
+
+.summary {
+  background-color: #444;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.hidden {
+  display: none;
+}
+
+.filter {
+  background-color: #444;
+  color: #fff;
+  padding: 1em;
+}
+
+.all-radio::after, .completed-radio::after {
+  content: "|";
+  margin-left: 1em;
+  margin-right: 1em;
+}/*# sourceMappingURL=main.css.map */
