@@ -141,11 +141,11 @@
 }
 .education-modul, .work-modul, .contacts-page {
 
-    max-width: 20em;
-    min-width: 12.5rem;
+    max-width: 30em;
+    min-width: 15rem;
     margin-top: 1em;
     text-align: center;
-    line-height: 120%;
+    line-height: 150%;
 }
 h3 {
     font-size: 1.2em;

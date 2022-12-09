@@ -56,7 +56,7 @@
     
     <div class="start-page" id="start">
         <h1 class="title-name">VELIN ILIEV</h1>
-        <h2 class="subtitle-position">FULL STACK DEVELOPER <br>AND<br>GRAPHIC DESIGNER</h2>
+        <h2 class="subtitle-position">FULL STACK DEVELOPER <br>GRAPHIC DESIGNER</h2>
         <!-- <p class="title-description">personal page</p> -->
         <canvas id="canvas1"></canvas>
         <img class="moon-image" src="./images/moon.svg" alt="moon">
@@ -88,30 +88,30 @@
         <div class="container" id="educationContainer">
             <div class="education-modul">
                 <h3>SoftUni</h3>
-                <p><b>Completed courses:</b>  <br> 
-                    Programming Basics with PYTHON / 2022, <br> 
-                    Programming Fundamentals with PYTHON / 2022 <br> 
-                    <b>Upcoming courses:</b> <br> 
-                    Python Advanced 2023, <br>
-                    Python Web 2023<br>
+                <b><u>Upcoming courses:</u></b> <br> 
+                    Python Web 2023(May-Aug)<br>
+                    Python Advanced 2023 (Jan-Apr)<br>
+                    JS Front-End 2023 (Jan-Apr)<br>
+                    MS SQL 2023 (Jan-Feb)<br>
+                    Web Applications with Flask 2023 (Feb-Apr)
+                <p><b><u>Completed courses:</u></b>  <br> 
+                    Programming Fundamentals with Python / 2022 (Sep-Dec)<br> 
+                    Programming Basics with Python / 2022 (Jul-Aug)
                 </p>
             </div>
             <div class="education-modul">
                 <h3>ProgressBG</h3>
-                <p>Certified Front-End Developer <b>Advanced</b> / 2021<br></p>
+                <p>Certified Front-End Developer <b>Advanced</b> / 2021(Jan-Apr)<br></p>
+                Certified Front-End Developer / 2020 (Sep-Dec)
             </div>
             <div class="education-modul">
-                <h3>ProgressBG</h3>
-                <p>Certified Front-End Developer / 2020</p>
-            </div>
-            <div class="education-modul">
-                <h3>Linkedin Learning</h3>
+                <h3>Linkedin Learning and Udemy</h3>
                 <p>Completed courses:  <br> 
                     Become a React Developer, <br> 
                     CSS Scrolling and Parallax, <br> 
-                    Functional Programming with JS ES6, 
-                    <br> Learning HTML Canvas 
-                    <br> and more.  / 2021
+                    Functional Programming with JS ES6, <br>
+                    Learning HTML Canvas <br>
+                    and more  / 2021-2022 (May-May)
                 </p>
             </div>
         </div>
@@ -123,11 +123,11 @@
         <h1 class="category-title">Skills</h1>
         <div class="container" id="skillsContainer">
             <div class="skills-column left">
-                <div class="el-skill">HTML <span>2+ years</span></div>
-                <div class="el-skill">CSS / SASS <span>2+ years</span></div>
-                <div class="el-skill">JAVASCRIPT <span>2+ yeats</span></div>
-                <div class="el-skill">GITHUB <span>2+ years</span></div>
-                <div class="el-skill">PYTHON <span>6+ months</span></div>
+                <div class="el-skill">HTML <span id="html_experience"></span></div>
+                <div class="el-skill">CSS / SASS <span id="css_experience"></span></div>
+                <div class="el-skill">JAVASCRIPT <span id="js_experience"></span></div>
+                <div class="el-skill">GITHUB <span id="git_experience"></span></div>
+                <div class="el-skill">PYTHON <span id="python_experience"></span></div>
                 
                 
             </div>
@@ -163,8 +163,8 @@
 
     <!-- FOOTER -->
 
-    <footer>
-        Copyright © 2020-2023 | Design and coding by Velin Iliev.
+    <footer id="footer">
+        <!--  -->
     </footer>
 
     <script src="./javascript/canvas.js"></script>
@@ -173,5 +173,6 @@
     <script src="./javascript/sandwichMenu.js"></script>
     <script src="./javascript/observerScroll.js"></script>
     <script src="./javascript/smoothScroll.js"></script>
+    <script src="./javascript/fillDates.js"></script>
 </body>
 </html>
