@@ -1,8 +1,6 @@
-function count_months(start, end){
-    let total_months = (end.getFullYear() - start.getFullYear()) * 12;
-    total_months -= start.getMonth();
-    total_months += end.getMonth();
-    let years = Math.floor( total_months / 12 );
+function display_experience(start, end){
+    let total_months = (end.getFullYear() - start.getFullYear()) * 12 - start.getMonth() + end.getMonth();
+    let years = Math.floor(total_months / 12);
     let months = total_months - years * 12;
     return `${years}.${months} years`
 }
@@ -13,15 +11,18 @@ function fill_experience() {
     const js_experience = document.querySelector('#js_experience');
     const git_experience = document.querySelector('#git_experience');
     const python_experience = document.querySelector('#python_experience');
+    const django_experience = document.querySelector('#django_experience');
+    const postgre_experience = document.querySelector('#postgre_experience');
     
-    
-    html_experience.innerHTML = count_months(new Date("Sep 01, 2020 00:00:00"), new Date);
-    css_experience.innerHTML = count_months(new Date("Sep 01, 2020 00:00:00"), new Date);
-    js_experience.innerHTML = count_months(new Date("Sep 01, 2020 00:00:00"), new Date);
-    git_experience.innerHTML = count_months(new Date("Sep 01, 2020 00:00:00"), new Date);
-    python_experience.innerHTML = count_months(new Date("Jul 01, 2022 00:00:00"), new Date);
-
+    html_experience.innerHTML = display_experience(new Date("Sep 01, 2020 00:00:00"), new Date);
+    css_experience.innerHTML = display_experience(new Date("Sep 01, 2020 00:00:00"), new Date);
+    js_experience.innerHTML = display_experience(new Date("Sep 01, 2020 00:00:00"), new Date);
+    git_experience.innerHTML = display_experience(new Date("Sep 01, 2020 00:00:00"), new Date);
+    python_experience.innerHTML = display_experience(new Date("Jul 01, 2022 00:00:00"), new Date);
+    django_experience.innerHTML = display_experience(new Date("May 01, 2023 00:00:00"), new Date);
+    postgre_experience.innerHTML = display_experience(new Date("May 01, 2023 00:00:00"), new Date);
 }
+
 function fill_footer() {
     const footer = document.querySelector('#footer');
     current_year = new Date;
