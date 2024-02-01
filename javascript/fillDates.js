@@ -14,7 +14,9 @@ function fill_experience() {
     const django_experience = document.querySelector('#django_experience');
     const postgre_experience = document.querySelector('#postgre_experience');
     const react_experience = document.querySelector('#react_experience');
-    
+    const fastapi_experience = document.querySelector( '#fastapi_experience');
+    const vuejs_experience = document.querySelector( '#vuejs_experience');
+
     html_experience.innerHTML = display_experience(new Date("Sep 01, 2020 00:00:00"), new Date);
     css_experience.innerHTML = display_experience(new Date("Sep 01, 2020 00:00:00"), new Date);
     js_experience.innerHTML = display_experience(new Date("Sep 01, 2020 00:00:00"), new Date);
@@ -23,6 +25,8 @@ function fill_experience() {
     django_experience.innerHTML = display_experience(new Date("May 01, 2023 00:00:00"), new Date);
     postgre_experience.innerHTML = display_experience(new Date("May 01, 2023 00:00:00"), new Date);
     react_experience.innerHTML = display_experience(new Date("Sep 01, 2023 00:00:00"), new Date);
+    fastapi_experience.innerHTML = display_experience(new Date("Nov 01, 2023 00:00:00"), new Date);
+    vuejs_experience.innerHTML = display_experience(new Date("Nov 01, 2023 00:00:00"), new Date);
 }
 
 function fill_footer() {
