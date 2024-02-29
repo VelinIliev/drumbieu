@@ -2,7 +2,10 @@ function display_experience(start, end){
     let total_months = (end.getFullYear() - start.getFullYear()) * 12 - start.getMonth() + end.getMonth();
     let years = Math.floor(total_months / 12);
     let months = total_months - years * 12;
-    return `${years}.${months} years`
+    if (years > 0 && months > 0) {
+        return `${years}+ years`
+    }
+    return `${months}+ months`
 }
 
 function fill_experience() {
